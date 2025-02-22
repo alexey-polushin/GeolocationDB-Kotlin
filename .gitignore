@@ -31,3 +31,9 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+.jreleaser/.DS_Store
+
+.jreleaser/config.toml
+
+.DS_Store
