@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Ip Location"
+rootProject.name = "IpLocation"
 include(":app")
  

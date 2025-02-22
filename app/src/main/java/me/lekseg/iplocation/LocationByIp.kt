@@ -22,13 +22,17 @@ class LocationByIp(apiKey: String) {
                 }
 
                 is ResultWrapper.Error -> {
-                    ipLocationListener.onError(errorCode = 0)
+                    ipLocationListener.onError(message = result.message)
                 }
 
                 is ResultWrapper.Success -> {
-                    ipLocationListener.onSuccess(
-                        latitude = result.data?.latitude, longitude = result.data?.longitude
-                    )
+                    if (result.data != null) {
+                        ipLocationListener.onSuccess(
+                            result.data
+                        )
+                    } else {
+                        ipLocationListener.onError(message = "Unknown data error")
+                    }
                 }
             }
         }

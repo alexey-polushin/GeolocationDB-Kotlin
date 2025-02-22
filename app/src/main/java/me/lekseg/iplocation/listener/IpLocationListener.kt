@@ -1,7 +1,9 @@
 package me.lekseg.iplocation.listener
 
+import me.lekseg.iplocation.model.IpInfoResponse
+
 interface IpLocationListener {
     fun onLoad()
-    fun onSuccess(latitude: Double?, longitude: Double?)
-    fun onError(message: String? = null, errorCode: Int)
+    fun onSuccess(ipInfoResponse: IpInfoResponse)
+    fun onError(message: String? = null)
 }
