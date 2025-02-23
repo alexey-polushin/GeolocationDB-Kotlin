@@ -49,7 +49,7 @@ Create an instance of the `LocationByIp` class and provide your API key:
     val locationByIp = LocationByIp(apiKey = "YOUR_API_KEY_HERE")
 
 ### Fetching Location Data
-Use the `getLocation()` method to retrieve location data:
+Use the `getIpInfo()` method to retrieve location data:
 
     locationByIp.getIpInfo(object : IpLocationListener {
 
