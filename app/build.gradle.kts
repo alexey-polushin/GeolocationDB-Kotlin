@@ -39,26 +39,26 @@ android {
     }
 }
 
-version = "1.0.2"
+version = "1.0.3"
 
 publishing {
     publications {
         create<MavenPublication>("release") {
             groupId = "io.github.alexey-polushin"
-            artifactId = "iplocation"
+            artifactId = "geolocation-db-kotlin"
 
             pom {
-                name.set("iplocation")
+                name.set("geolocation-db-kotlin")
                 description.set("description")
-                url.set("https://github.com/alexey-polushin/iplocation")
+                url.set("https://github.com/alexey-polushin/GeolocationDB-Kotlin")
                 issueManagement {
-                    url.set("https://github.com/alexey-polushin/iplocation/issues")
+                    url.set("https://github.com/alexey-polushin/GeolocationDB-Kotlin/issues")
                 }
 
                 scm {
-                    url.set("https://github.com/alexey-polushin/iplocation")
-                    connection.set("scm:git://github.com/alexey-polushin/iplocation.git")
-                    developerConnection.set("scm:git://github.com/alexey-polushin/iplocation.git")
+                    url.set("https://github.com/alexey-polushin/GeolocationDB-Kotlin")
+                    connection.set("scm:git://github.com/alexey-polushin/GeolocationDB-Kotlin.git")
+                    developerConnection.set("scm:git://github.com/alexey-polushin/GeolocationDB-Kotlin.git")
                 }
 
                 licenses {
